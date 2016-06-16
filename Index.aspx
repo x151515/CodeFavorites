@@ -10,7 +10,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+            <Columns>
+                <asp:BoundField DataField="Name" HeaderText="Name" />
+                <asp:HyperLinkField DataTextField="Url" HeaderText="Url" />
+                <asp:BoundField DataField="Date" HeaderText="Date" />
+            </Columns>
+        </asp:GridView>
     </div>
     </form>
 </body>
